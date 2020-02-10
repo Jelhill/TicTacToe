@@ -87,12 +87,11 @@ for (let i = 0; i < boxes.length; i++) {
 
 
 document.addEventListener('click', function(e) {
-    if (e.target.classList.contains('replay')) {
+    if (e.target.id  === 'replay') {
         boxes.forEach((box) => {
             box.style.background = "none";
             box.innerHTML = "";
             nextTurn.innerHTML = "Play Next Game";
-        })
-        
+        })        
     }
 })
